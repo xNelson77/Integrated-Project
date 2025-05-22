@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT College – Course Selection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: #f4f6fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #2a2f92;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      color: #2a2f92;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #2a2f92;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1c2179;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      color: #777;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the IT College</h1>
+    <p>Select your desired course to view modules</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+
+      <div class="card">
+        <h2>Computer Science</h2>
+        <p>Master algorithms, data structures, and software development in this highly technical course designed for the future of innovation.</p>
+        <a href="modules_cs.html" class="btn">View Modules</a>
+      </div>
+
+      <div class="card">
+        <h2>Software Engineering</h2>
+        <p>Focus on designing large systems, managing software projects, and building secure, scalable software for real-world needs.</p>
+        <a href="modules_se.html" class="btn">View Modules</a>
+      </div>
+
+      <div class="card">
+        <h2>Cyber Security</h2>
+        <p>Develop expertise in ethical hacking, digital forensics, and cyber defense in one of the UK's fastest-growing industries.</p>
+        <a href="modules_cyber.html" class="btn">View Modules</a>
+      </div>
+
+    </div>
+
+<div style="text-align: center; margin-top: 50px;">
+  <a href="register.html" class="btn" style="padding: 15px 30px; background-color: #2a2f92; color: white; border-radius: 6px; text-decoration: none; font-size: 18px;">Register as a Student</a>
+</div>
+
+
+  </div>
+
+  <footer>
+    &copy; 2024 IT College Project – Created for IMAT2718
+  </footer>
+
+</body>
+</html>

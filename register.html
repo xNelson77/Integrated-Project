@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Course Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f6fa;
+      color: #333;
+    }
+    header {
+      background-color: #2a2f92;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2a2f92;
+      margin-top: 0;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 25px;
+      padding: 12px;
+      width: 100%;
+      background-color: #2a2f92;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1c2179;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Register for a Course</h1>
+  </header>
+
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form action="register_success.html" method="get">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">-- Choose a Course --</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Cyber Security">Cyber Security</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2024 IT College – Registration System
+  </footer>
+
+</body>
+</html>
