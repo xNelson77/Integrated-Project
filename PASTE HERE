@@ -95,4 +95,4 @@ CREATE OR REPLACE VIEW navigation_view AS
 SELECT label, link
 FROM navigation_menu
 ORDER BY display_order;
-#DONE "Nelson's part"
+#DONE "Nelson's part".
